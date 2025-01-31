@@ -1,5 +1,9 @@
 import streamlit as st
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load the .env file
+
 
 def get_api_key(api_key_name):
     # Check if the API key from the sidebar is present, else fallback to the .env file
